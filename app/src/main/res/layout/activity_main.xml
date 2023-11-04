@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|top"
+    android:background="@color/blue"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/intro_texto"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_margin="32dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            app:cardCornerRadius="24dp">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@color/white"
+                android:paddingStart="8dp"
+                android:paddingTop="8dp"
+                android:hint="@string/intro_texto"
+                android:gravity="top"
+                />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/rojo"
+        android:text="@string/corregir"
+        android:textSize="20sp"
+        />
+
+</LinearLayout>
