@@ -26,11 +26,13 @@
             android:layout_height="500dp"
             app:cardCornerRadius="24dp">
             <EditText
+                android:id="@+id/texto_edit"
                 android:layout_width="match_parent"
                 android:layout_height="500dp"
                 android:background="@color/white"
                 android:paddingStart="8dp"
                 android:paddingTop="8dp"
+                android:textColor="@color/black"
                 android:hint="@string/intro_texto"
                 android:gravity="top"
                 />
@@ -39,6 +41,7 @@
     </androidx.core.widget.NestedScrollView>
 
     <Button
+        android:id="@+id/corrector"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="@color/rojo"
